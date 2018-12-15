@@ -25,3 +25,4 @@ There is an filter input and a set of radio buttons for the different sort optio
 - [ ] Prettier CSS. Nav needs some work and there certainly could be some centering and drop shadows for the cards.
 - [ ] Extension options such as different card type filters, total card count, and related cards
 - [ ] Better scroll handling. The current logic for the infinite scroll can be a little wonky if the user scrolls too fast to the bottom.
+- [ ] Tests for utils and React components.
