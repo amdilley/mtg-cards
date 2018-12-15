@@ -1,0 +1,43 @@
+@keyframes PlaceholderGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mtg-placeholder-card {
+    background: linear-gradient(317deg, #61d1b4, #f1f6f5);
+    background-size: 400% 400%;
+    border-radius: 5px;
+    animation: PlaceholderGradient 1s ease infinite;
+}
+
+.mtg-card, .mtg-placeholder-card {
+    position: relative;
+    width: 215px;
+    height: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.mtg-card > img, .mtg-card > .mtg-card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mtg-card-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.mtg-card-info:hover {
+    opacity: 1;
+}
